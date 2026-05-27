@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoBot Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">⬡ CRYPTOBOT_v1</div>
+        <div class="status">
+            <div class="dot"></div>
+            <span id="status-text">SCANNING MARKETS...</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="section-title">// live market feed</p>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-header">
+                    <span class="coin-name">BITCOIN</span>
+                    <span class="coin-badge">BTC</span>
+                </div>
+                <div class="price" id="btc-price">---</div>
+                <div class="change" id="btc-change">...</div>
+                <div class="signal-box">
+                    SIGNAL: <span class="signal" id="btc-signal">READING...</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="coin-name">ETHEREUM</span>
+                    <span class="coin-badge">ETH</span>
+                </div>
+                <div class="price" id="eth-price">---</div>
+                <div class="change" id="eth-change">...</div>
+                <div class="signal-box">
+                    SIGNAL: <span class="signal" id="eth-signal">READING...</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="coin-name">SOLANA</span>
+                    <span class="coin-badge">SOL</span>
+                </div>
+                <div class="price" id="sol-price">---</div>
+                <div class="change" id="sol-change">...</div>
+                <div class="signal-box">
+                    SIGNAL: <span class="signal" id="sol-signal">READING...</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="log-box">
+            <div class="log-title">// bot activity log</div>
+            <div id="log-feed">
+                <div class="log-entry">
+                    <span class="log-time">--:--:--</span>
+                    <span class="log-msg">Initialising market scanner...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">CRYPTOBOT_v1 &nbsp;|&nbsp; DATA VIA COINGECKO &nbsp;|&nbsp; UPDATES EVERY 30S</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
